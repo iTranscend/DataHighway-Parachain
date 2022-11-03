@@ -8,4 +8,7 @@ members = [
     'pallets/primitives',
     'pallets/parachain-staking',
     'pallets/pallet-inflation',
+    'pallets/rmrk-core',
+    'pallets/rmrk-equip',
+    'pallets/rmrk-market',
 ]

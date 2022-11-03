@@ -28,6 +28,9 @@ static_assertions = '1.1.0'
 module-primitives = { default-features = false, path = '../pallets/primitives' }
 parachain-staking = { path = "../pallets/parachain-staking", default-features = false }
 pallet-inflation = { path = "../pallets/pallet-inflation", default-features = false }
+pallet-rmrk-core = { path = "../pallets/rmrk-core", default-features = false }
+pallet-rmrk-equip = { path = "../pallets/rmrk-equip", default-features = false }
+pallet-rmrk-market = { path = "../pallets/rmrk-market", default-features = false }
 
 # Substrate
 frame-benchmarking = { git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.29', default-features = false, optional = true }
@@ -158,6 +161,9 @@ std = [
     'pallet-xcm/std',
     'parachain-info/std',
     'parachain-staking/std',
+    # 'pallet-rmrk-core/std',
+    # 'pallet-rmrk-equip/std',
+    # 'pallet-rmrk-market/std',
     'polkadot-parachain/std',
     'polkadot-runtime-common/std',
     'sp-api/std',
@@ -237,4 +243,7 @@ try-runtime = [
     'pallet-treasury/try-runtime',
     'pallet-utility/try-runtime',
     'parachain-staking/try-runtime',
+    # 'pallet-rmrk-core/try-runtime',
+    # 'pallet-rmrk-equip/try-runtime',
+    # 'pallet-rmrk-market/try-runtime',
 ]
