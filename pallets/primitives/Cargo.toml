@@ -11,6 +11,9 @@ bitmask = { version = '0.5.0', default-features = false }
 
 # Local
 parachain-staking = { path = "../parachain-staking/", default-features = false }
+pallet-rmrk-core = { path = "../rmrk-core/", default-features = false }
+pallet-rmrk-equip = { path = "../rmrk-equip/", default-features = false }
+pallet-rmrk-market = { path = "../rmrk-market/", default-features = false }
 
 # Substrate
 frame-benchmarking = { git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.29', default-features = false, optional = true }
@@ -42,4 +45,7 @@ std = [
     'sp-runtime/std',
     'sp-std/std',
     "parachain-staking/std",
+    "pallet-rmrk-core/std",
+    "pallet-rmrk-equip/std",
+    "pallet-rmrk-market/std",
 ]

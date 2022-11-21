@@ -67,6 +67,7 @@ pallet-timestamp = { git = 'https://github.com/paritytech/substrate', branch = '
 pallet-tips = { git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.29', default-features = false }
 pallet-transaction-payment = { git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.29', default-features = false }
 pallet-transaction-payment-rpc-runtime-api = { git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.29', default-features = false }
+pallet-uniques = { git = "https://github.com/paritytech/substrate.git", version = "4.0.0-dev", branch = "polkadot-v0.9.29", default-features = false }
 pallet-asset-tx-payment = { git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.29', default-features = false }
 pallet-treasury = { git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.29', default-features = false }
 pallet-utility = { git = 'https://github.com/paritytech/substrate', branch = 'polkadot-v0.9.29', default-features = false }
@@ -161,10 +162,11 @@ std = [
     'pallet-xcm/std',
     'parachain-info/std',
     'parachain-staking/std',
-    # 'pallet-rmrk-core/std',
-    # 'pallet-rmrk-equip/std',
-    # 'pallet-rmrk-market/std',
+    'pallet-rmrk-core/std',
+    'pallet-rmrk-equip/std',
+    'pallet-rmrk-market/std',
     'polkadot-parachain/std',
+    "pallet-uniques/std",
     'polkadot-runtime-common/std',
     'sp-api/std',
     'sp-block-builder/std',
@@ -211,6 +213,10 @@ runtime-benchmarks = [
     'pallet-utility/runtime-benchmarks',
     'pallet-xcm/runtime-benchmarks',
     'parachain-staking/runtime-benchmarks',
+    'pallet-rmrk-core/runtime-benchmarks',
+    'pallet-rmrk-equip/runtime-benchmarks',
+    'pallet-rmrk-market/runtime-benchmarks',
+    "pallet-uniques/runtime-benchmarks",
     'polkadot-runtime-common/runtime-benchmarks',
     'sp-runtime/runtime-benchmarks',
     'xcm-builder/runtime-benchmarks',
@@ -243,7 +249,7 @@ try-runtime = [
     'pallet-treasury/try-runtime',
     'pallet-utility/try-runtime',
     'parachain-staking/try-runtime',
-    # 'pallet-rmrk-core/try-runtime',
-    # 'pallet-rmrk-equip/try-runtime',
-    # 'pallet-rmrk-market/try-runtime',
+    'pallet-rmrk-core/try-runtime',
+    'pallet-rmrk-equip/try-runtime',
+    'pallet-rmrk-market/try-runtime',
 ]
